@@ -9,10 +9,11 @@ const connectDatabase = () => {
     })
     .then((data) => {
       console.log(`MongoDb is connected with server: ${data.connection.host}`);
-    })
-    .catch((err) => {
-      console.log(err);
     });
+  // not use catch because we tackle this in Unhandled promise rejection as promise rejects it completely instead of handling it suing catch.
+  // .catch((err) => {
+  //   console.log(err);
+  // });
 };
 
 module.exports = connectDatabase;
