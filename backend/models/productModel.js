@@ -67,6 +67,12 @@ const productSchema = new mongoose.Schema({
     default: Date.now,
   },
 
+  user: {
+    type: mongoose.Schema.ObjectId,
+    ref: "User",
+    required: true,
+  },
+
   brand: {
     type: String,
     required: [true, "Please Enter Product Brand"],
