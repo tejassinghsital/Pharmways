@@ -9,7 +9,7 @@ COMMIT: Error Handling of 5 Basic Errors:
 COMMIT: Added apifeatures such as searching, filtering and pagination
 info within the files.
 
-COMMIT:
+COMMIT: COmpleted User Routes(Authentication apis)
 
 1. bycryptjs: storing the passwords of user by first converting them in hash form so that even admin can't see them
 2. jsonwebtoken: for generating token(discuss in detail later)
@@ -23,3 +23,12 @@ EXTRAS:
 1. We create functions to perform or simply code tasks in middlewqare for example we created erro fnx to detect errors in middleware.
 2. hierarchy of backend functioning is server then app then route and then controller and then model so process start from model then controller and like this
 3. [ex. from auth.js in middleware] If we write const token= req.cookies; then with console.log(token) we get object but if we use const {token}= req.cookies; then we get value of that token directly.
+
+NOTE: COmpleted User Routes(Authentication APIs and Completed Authentication APIs are same commit)
+
+COMMIT: Authentication APIs Error Handling
+For this, we handeled,
+
+1. Mongoose Duplicate Key Error
+2. Wrong JWT Token Error
+3. JWT Token Expired Error
