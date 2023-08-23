@@ -1,3 +1,4 @@
+//hierarchy of backend functioning is server then app then route and then controller and then model so process start from model then controller and like this
 const mongoose = require("mongoose");
 
 const connectDatabase = () => {

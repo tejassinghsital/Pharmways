@@ -1,0 +1,33 @@
+.navbar {
+  background-color: #fff;
+}
+
+.navbar-container {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #000;
+  padding: 2vh;
+}
+
+.navbar-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-item {
+  margin-right: 2vw;
+  cursor: pointer;
+  font-size: 1.5vh;
+  color: grey;
+}
+
+.navbar-contact {
+  font-weight: bold;
+  font-size: 1.5vh;
+  color: green;
+}

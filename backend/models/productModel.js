@@ -66,21 +66,6 @@ const productSchema = new mongoose.Schema({
     type: Date,
     default: Date.now,
   },
-
-  user: {
-    type: mongoose.Schema.ObjectId,
-    ref: "User",
-    required: true,
-  },
-
-  brand: {
-    type: String,
-    required: [true, "Please Enter Product Brand"],
-  },
-  packagingType: {
-    type: String,
-    required: [true, "Please Enter Packaging Type"],
-  },
 });
 
 module.exports = mongoose.model("Product", productSchema);
